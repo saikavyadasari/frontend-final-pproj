@@ -1,0 +1,117 @@
+/* App.css */
+nav {
+  background-color: #33ec12;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(249, 249, 247);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #171818;
+}
+
+nav a, nav .dropdown span {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Highlight the 'About' Button */
+.dropdown span {
+  cursor: pointer;
+}
+
+/* Active State for Links */
+nav a:hover, nav .dropdown span:hover {
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links in the Dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover Effects */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Button Hover */
+.dropdown:hover .dropbtn {
+  background-color: #61dafb;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Apply styles for the light theme */
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Apply styles for the dark theme */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}

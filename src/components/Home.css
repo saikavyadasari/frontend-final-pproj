@@ -1,0 +1,22 @@
+/* Home.css */
+
+/* Positioning the theme selector to the top-right */
+.theme-selector {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    /*background-color: rgba(255, 255, 255, 0.7); /* Optional: gives a light background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: adds a subtle shadow */
+    z-index: 1000; /* Makes sure the radio buttons are above other content */
+  }
+  
+  .theme-selector label {
+    margin-right: 15px; /* Spacing between the radio buttons */
+  }
+  
+  .theme-selector h3 {
+    margin-bottom: 10px; /* Space between the label and the radio buttons */
+  }
+  
